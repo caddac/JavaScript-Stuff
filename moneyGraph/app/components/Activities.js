@@ -34,9 +34,7 @@ var Activites = React.createClass({
 	},
 	continueOnClick: function(e){
 		this.context.router.push({
-			pathname: '/moneyFlows',
-			testMessage: "Some test Message!!"
-
+			pathname: '/moneyFlows'
 		});
 		console.log('submit clicked');
 		console.log(e);
@@ -49,10 +47,8 @@ var Activites = React.createClass({
 			this.setState({
 				activities:activities
 			});	
-
 			//focus on the new child component
 			//this.refs["activity_" + i].refs.activityInput.focus()
-
     	}
 	},
 	render: function(){
